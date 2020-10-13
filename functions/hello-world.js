@@ -1,6 +1,6 @@
 exports.handler = function(context, event, callback) {
     const result = {
-        message : "Hello Twilio dummy account"
+        message : "Function modified by visual studio"
     }
 
     callback(null, result);
