@@ -2,11 +2,19 @@
 
 name: Twilio CI
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
-on:
-  push:
-    branches: [ main ]
+# You can now create workflows that are manually triggered with the new workflow_dispatch event.
+# You will then see a ‘Run workflow’ button on the Actions tab, enabling you to easily trigger a run.
+# You can choose which branch the workflow is run on.
+# In addition, you can optionally specify inputs, which GitHub will present as form elements in the UI. Workflow dispatch inputs are specified with the same format as action inputs.
+on: 
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Test scenario tags'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
