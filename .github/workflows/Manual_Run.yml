@@ -6,13 +6,12 @@ name: Twilio CI Manual
 # You will then see a ‘Run workflow’ button on the Actions tab, enabling you to easily trigger a run.
 # You can choose which branch the workflow is run on.
 # In addition, you can optionally specify inputs, which GitHub will present as form elements in the UI. Workflow dispatch inputs are specified with the same format as action inputs.
-on:
+on: 
   workflow_dispatch:
     inputs:
-      msg:
-        description: 'Run workflow Manually '
-        default: 'def'
-
+      git-ref:
+        description: Run Workflow Manually    
+        required: false
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
