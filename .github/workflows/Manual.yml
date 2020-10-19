@@ -1,6 +1,6 @@
 # This is a basic workflow to publish a Twilio function with Github Actions
 
-name: Twilio CI
+name: Twilio CI_Veerendra
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
