@@ -1,6 +1,6 @@
 # This is a basic workflow to publish a Twilio function with Github Actions
 
-name: Twilio CI Manual
+name: Twilio CI Veerendra
 
 # You can now create workflows that are manually triggered with the new workflow_dispatch event.
 # You will then see a ‘Run workflow’ button on the Actions tab, enabling you to easily trigger a run.
